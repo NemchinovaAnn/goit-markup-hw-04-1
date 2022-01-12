@@ -96,24 +96,31 @@ outline: 2px solid red;
     font-size: 14px;
     font-weight: 500;
 }
+.adres-social-link{
+    fill: var(--header-color)
+}
 .adres-list :hover,
-.adres-list :focus {
+.adres-list :focus{
     color: var(--accent-color); 
 }
-
+.adres-list :hover .adres-social-link,
+.adres-list :hover.adres-social-link{
+    fill: var(--accent-color);
+}
 /* --------ОСНОВНОЙ КОНТЕНТ------- */   
 .hero{
     padding-top: 195px;
     padding-bottom: 205px;
-background: #2F303A;
-max-width: 1600px; 
-background: #2F303A;
-display: flex;
-text-align: center;
-background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgr.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+    background: #2F303A;
+    max-width: 1600px; 
+    background: #2F303A;
+    display: flex;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgr.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 94px;
 }
 
 .hero-title{
@@ -143,10 +150,6 @@ background-size: cover;
 .hero-btn :focus{
     color: #188CE8;  
 }
-.about{
-    padding-top: 89px;
-    padding-bottom: 110px;
-}
 .advantages-titel-hidden{
     position: absolute;
     white-space: nowrap;
@@ -161,6 +164,22 @@ background-size: cover;
 }
 .advantages-list{
     display: flex;
+    justify-content: center;
+}
+.advantages-item{
+    width: 270px;
+    height: 120px;
+    left: 815px;
+    top: 774px;
+    background: #F5F4FA;
+    border-radius: 4px;  
+}
+.advantages-item + .advantages-item{
+    margin-left: 30px;
+}
+.about{
+    padding-top: 89px;
+    padding-bottom: 110px;
 }
 .about-title-hidden{
     position: absolute;
@@ -174,11 +193,11 @@ background-size: cover;
     clip-path: inset(50%);
     margin: -1px;
 }
-.about-item{
-    margin-right: 30px;
-}
 .about-list{
     display: flex;
+}
+.about-item{
+    margin-right: 30px;
 }
 .about-title-list{
     font-weight: bold;
@@ -203,7 +222,6 @@ background-size: cover;
     display: flex;
 }
 .make-image{
-    padding-bottom: 94px;
     margin: -15px;
     margin-bottom: -30px;
 }
@@ -268,6 +286,7 @@ padding-bottom: 94px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--header-color);
+    margin-bottom: 16px;
 }
 .team-social-list{
     display: flex;
@@ -279,12 +298,37 @@ padding-bottom: 94px;
 .team-social-link{
     width: 44px;
     height: 44px;
-    background-color:teal;
     display: block;
     border-radius: 50%;
 }
+.clients{
+    padding-bottom: 94px;
+}
+.clients-titel{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
 .clients-list{
     display: flex;
+    justify-content: center;
+}
+.clients-item{
+    width: 170px;
+    height: 92px;
+    left: 615px;
+    top: 2493px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.clients-item + .clients-item{
+margin-left: 30px;
 }
 /* ---------footer------- */
 .footer{
@@ -318,6 +362,9 @@ padding-bottom: 94px;
 .footer-address :focus{
     color: var(--accent-color);
 }
+.footer-contact{
+    padding-left: 70px;
+}
 .footer-item{
     font-style: normal;
     font-weight: normal;
@@ -327,15 +374,37 @@ padding-bottom: 94px;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
 }
-.contacts-title{
+.footer-contact-title{
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    }
+    margin-bottom: 20px;
+}
+.footer-contact-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+}
+.footer-contact-item + .footer-contact-item{
+    margin-left: 10px;
+}
+.footer-contact-link{
+    width: 44px;
+    height: 44px;
+    display: block;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+/* .footer-contact-item{
+    
+} */
 /* -----------Портфолио-------- */
 .header-portfolio{
     border-bottom: 1600px 80px 0 0;
