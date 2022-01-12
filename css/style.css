@@ -147,6 +147,21 @@ background-size: cover;
     padding-top: 89px;
     padding-bottom: 110px;
 }
+.advantages-titel-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.advantages-list{
+    display: flex;
+}
 .about-title-hidden{
     position: absolute;
     white-space: nowrap;
@@ -268,11 +283,17 @@ padding-bottom: 94px;
     display: block;
     border-radius: 50%;
 }
+.clients-list{
+    display: flex;
+}
 /* ---------footer------- */
 .footer{
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer-container{
+    display: flex;
 }
 .footer-logo{
     font-family: Raleway;
@@ -285,6 +306,7 @@ padding-bottom: 94px;
     margin-bottom: 20px;
 }
 .footer-map {
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -297,6 +319,7 @@ padding-bottom: 94px;
     color: var(--accent-color);
 }
 .footer-item{
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -304,6 +327,15 @@ padding-bottom: 94px;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
 }
+.contacts-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
 /* -----------Портфолио-------- */
 .header-portfolio{
     border-bottom: 1600px 80px 0 0;
@@ -358,6 +390,10 @@ background-color: #2196F3;
     width: calc(100% / 3 - 30px);
     margin: 15px;
     margin-bottom: 30px;
+}
+.content-item:hover,
+.content-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .contener-box{
     padding: 24px 20px;
