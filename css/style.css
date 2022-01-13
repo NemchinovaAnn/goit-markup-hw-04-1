@@ -150,6 +150,7 @@ outline: 2px solid red;
 .hero-btn :focus{
     color: #188CE8;  
 }
+/* --------Преимуществa------- */ 
 .advantages-titel-hidden{
     position: absolute;
     white-space: nowrap;
@@ -177,6 +178,7 @@ outline: 2px solid red;
 .advantages-item + .advantages-item{
     margin-left: 30px;
 }
+/* --------Особенности------- */ 
 .about{
     padding-top: 89px;
     padding-bottom: 110px;
@@ -215,6 +217,7 @@ outline: 2px solid red;
     letter-spacing: 0.03em;
     color: var(--header-color);
 }
+/* --------Чем мы занимаемся------- */ 
 .make{
     padding-bottom: 94px;
 }
@@ -239,6 +242,7 @@ outline: 2px solid red;
     padding-bottom: 50px; 
     text-align: center;
 }
+/* --------Наша команда------- */ 
 .team{
 background-color: #F5F4FA;
 padding-top: 94px ;
@@ -299,8 +303,24 @@ padding-bottom: 94px;
     width: 44px;
     height: 44px;
     display: block;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
+    background: #FFFFFF;
+    padding: 10px;
 }
+.team-social-item :hover,
+.team-social-item :focus{
+    background:#2196F3;
+}
+.team-social-icon{
+    fill: #AFB1B8;
+}
+.team-social-item :hover .team-social-icon,
+.team-social-item :focus .team-social-icon{
+    fill:#FFFFFF;
+}
+/* --------Постоянные клиенты------- */ 
 .clients{
     padding-bottom: 94px;
 }
@@ -329,6 +349,16 @@ padding-bottom: 94px;
 }
 .clients-item + .clients-item{
 margin-left: 30px;
+}
+.clients-item :hover .clients-icon,
+.clients-item :focus .clients-icon{
+    fill: #2196F3;
+    border: 1px solid #2196F3;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.clients-icon{
+    fill: #AFB1B8;
 }
 /* ---------footer------- */
 .footer{
@@ -402,9 +432,13 @@ margin-left: 30px;
     background: rgba(255, 255, 255, 0.1);
     padding: 10px;
 }
-/* .footer-contact-item{
-    
-} */
+.footer-contact-item :hover,
+.footer-contact-item :focus{
+    background: #2196F3;
+}
+.footer-contact-icons{
+    fill: #FFFFFF;
+}
 /* -----------Портфолио-------- */
 .header-portfolio{
     border-bottom: 1600px 80px 0 0;
