@@ -80,10 +80,6 @@ outline: 2px solid red;
     color:var(--ferst-btn-color);
     margin-right: 50px;
 }
-.header-list :hover, 
-.header-list :focus{
-    color: var(--accent-color); 
-}
 .header-mail{
     color: var(--header-color);
     margin-right: 50px;
@@ -97,16 +93,33 @@ outline: 2px solid red;
     font-weight: 500;
 }
 .adres-social-link{
-    fill: var(--header-color)
+    fill: var(--header-color);
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.header-list :hover, 
+.header-list :focus{
+    color: var(--accent-color); 
 }
 .adres-list :hover,
 .adres-list :focus{
     color: var(--accent-color); 
 }
+
 .adres-list :hover .adres-social-link,
-.adres-list :hover.adres-social-link{
+.adres-list :focus .adres-social-link{
     fill: var(--accent-color);
 }
+/*   ???? 
+.adres-social-link :hover .adres-list
+.adres-social-link :focus .adres-list{
+    fill: var(--accent-color);
+} */
+/* При наведении на иконку менять цвет иконки и ссылки  */
+
+
+
 /* --------ОСНОВНОЙ КОНТЕНТ------- */   
 .hero{
     padding-top: 195px;
@@ -150,37 +163,8 @@ outline: 2px solid red;
 .hero-btn :focus{
     color: #188CE8;  
 }
-/* --------Преимуществa------- */ 
-.advantages-titel-hidden{
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-.advantages-list{
-    display: flex;
-    justify-content: center;
-}
-.advantages-item{
-    width: 270px;
-    height: 120px;
-    left: 815px;
-    top: 774px;
-    background: #F5F4FA;
-    border-radius: 4px;  
-}
-.advantages-item + .advantages-item{
-    margin-left: 30px;
-}
 /* --------Особенности------- */ 
 .about{
-    padding-top: 89px;
     padding-bottom: 110px;
 }
 .about-title-hidden{
@@ -200,6 +184,17 @@ outline: 2px solid red;
 }
 .about-item{
     margin-right: 30px;
+}
+.about-container{
+    width: 270px;
+    height: 120px;
+    left: 815px;
+    top: 774px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 25px 100px;
 }
 .about-title-list{
     font-weight: bold;
@@ -337,29 +332,31 @@ padding-bottom: 94px;
 .clients-list{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+.clients-item + .clients-item{
+    margin-left: 30px;
+    }
 .clients-item{
     width: 170px;
     height: 92px;
-    left: 615px;
-    top: 2493px;
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-.clients-item + .clients-item{
-margin-left: 30px;
-}
-.clients-item :hover .clients-icon,
-.clients-item :focus .clients-icon{
-    fill: #2196F3;
-    border: 1px solid #2196F3;
-    box-sizing: border-box;
+    padding: 16px 32px;
+    border: 1px solid;
+    border-color: #AFB1B8;
     border-radius: 4px;
 }
 .clients-icon{
     fill: #AFB1B8;
 }
+.clients-icon :hover, 
+.clients-icon :focus {
+    fill: #2196F3;
+}
+.clients-item :hover,
+.clients-item :focus{
+    border-color: #2196F3;
+}
+
 /* ---------footer------- */
 .footer{
     background: #2F303A;
@@ -427,7 +424,9 @@ margin-left: 30px;
 .footer-contact-link{
     width: 44px;
     height: 44px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     padding: 10px;
