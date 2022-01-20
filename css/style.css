@@ -80,6 +80,10 @@ outline: 2px solid red;
     color:var(--ferst-btn-color);
     margin-right: 50px;
 }
+.header-list :hover, 
+.header-list :focus{
+    color: var(--accent-color); 
+}
 .header-mail{
     color: var(--header-color);
     margin-right: 50px;
@@ -98,28 +102,18 @@ outline: 2px solid red;
     justify-content: center;
     margin-right: 10px;
 }
-.header-list :hover, 
-.header-list :focus{
-    color: var(--accent-color); 
-}
 .adres-list :hover,
 .adres-list :focus{
     color: var(--accent-color); 
 }
-
 .adres-list :hover .adres-social-link,
 .adres-list :focus .adres-social-link{
     fill: var(--accent-color);
 }
-/*   ???? 
-.adres-social-link :hover .adres-list
-.adres-social-link :focus .adres-list{
-    fill: var(--accent-color);
-} */
-/* При наведении на иконку менять цвет иконки и ссылки  */
-
-
-
+.adres-social-link :hover.header-tel,
+.adres-social-link :focus.header-tel{
+    color: var(--accent-color);
+}
 /* --------ОСНОВНОЙ КОНТЕНТ------- */   
 .hero{
     padding-top: 195px;
@@ -311,8 +305,8 @@ padding-bottom: 94px;
 .team-social-icon{
     fill: #AFB1B8;
 }
-.team-social-item :hover .team-social-icon,
-.team-social-item :focus .team-social-icon{
+.team-social-item:hover .team-social-icon,
+.team-social-item:focus .team-social-icon{
     fill:#FFFFFF;
 }
 /* --------Постоянные клиенты------- */ 
@@ -348,12 +342,12 @@ padding-bottom: 94px;
 .clients-icon{
     fill: #AFB1B8;
 }
-.clients-icon :hover, 
-.clients-icon :focus {
+.clients-icon:hover, 
+.clients-icon:focus{
     fill: #2196F3;
 }
-.clients-item :hover,
-.clients-item :focus{
+.clients-item:hover,
+.clients-item:focus{
     border-color: #2196F3;
 }
 
